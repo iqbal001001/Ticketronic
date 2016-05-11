@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EB6B60AF-F391-4AB5-94E1-67E90EFBF5FF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ticketronic.Data</RootNamespace>
+    <AssemblyName>Ticketronic.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseRepository.cs" />
+    <Compile Include="EventRepository.cs" />
+    <Compile Include="Migrations\201605082004446_Initial Create.cs" />
+    <Compile Include="Migrations\201605082004446_Initial Create.Designer.cs">
+      <DependentUpon>201605082004446_Initial Create.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605082020229_Remove List Ticket from Session.cs" />
+    <Compile Include="Migrations\201605082020229_Remove List Ticket from Session.Designer.cs">
+      <DependentUpon>201605082020229_Remove List Ticket from Session.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605091849179_String length 20 to 50.cs" />
+    <Compile Include="Migrations\201605091849179_String length 20 to 50.Designer.cs">
+      <DependentUpon>201605091849179_String length 20 to 50.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605091952026_Added Entity TicketPurchase.cs" />
+    <Compile Include="Migrations\201605091952026_Added Entity TicketPurchase.Designer.cs">
+      <DependentUpon>201605091952026_Added Entity TicketPurchase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605092130429_Event Cascade Session.cs" />
+    <Compile Include="Migrations\201605092130429_Event Cascade Session.Designer.cs">
+      <DependentUpon>201605092130429_Event Cascade Session.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605100103573_OnetoMany session and ticket.cs" />
+    <Compile Include="Migrations\201605100103573_OnetoMany session and ticket.Designer.cs">
+      <DependentUpon>201605100103573_OnetoMany session and ticket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605101254459_Foreign Key EventId on Sessions.cs" />
+    <Compile Include="Migrations\201605101254459_Foreign Key EventId on Sessions.Designer.cs">
+      <DependentUpon>201605101254459_Foreign Key EventId on Sessions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605101811127_TicketPurchase field added TransactionId, TicketId.cs" />
+    <Compile Include="Migrations\201605101811127_TicketPurchase field added TransactionId, TicketId.Designer.cs">
+      <DependentUpon>201605101811127_TicketPurchase field added TransactionId, TicketId.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605102059422_change.cs" />
+    <Compile Include="Migrations\201605102059422_change.Designer.cs">
+      <DependentUpon>201605102059422_change.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="TicketRepository.cs" />
+    <Compile Include="TicketronicDBContext.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TicketronicDBContextFactory.cs" />
+    <Compile Include="TicketronicDBInitializer.cs" />
+    <Compile Include="TicketronicUnitOfWork.cs" />
+    <Compile Include="TransactionRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ticketronic.Domain\Ticketronic.Domain.csproj">
+      <Project>{f991cfb1-010e-46f0-a7ea-ea9633ff1365}</Project>
+      <Name>Ticketronic.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ticketronic.RepositoryInterface\Ticketronic.RepositoryInterface.csproj">
+      <Project>{62d14d17-3773-4c4a-bb73-d1e39978eb71}</Project>
+      <Name>Ticketronic.RepositoryInterface</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201605082004446_Initial Create.resx">
+      <DependentUpon>201605082004446_Initial Create.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605082020229_Remove List Ticket from Session.resx">
+      <DependentUpon>201605082020229_Remove List Ticket from Session.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605091849179_String length 20 to 50.resx">
+      <DependentUpon>201605091849179_String length 20 to 50.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605091952026_Added Entity TicketPurchase.resx">
+      <DependentUpon>201605091952026_Added Entity TicketPurchase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605092130429_Event Cascade Session.resx">
+      <DependentUpon>201605092130429_Event Cascade Session.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605100103573_OnetoMany session and ticket.resx">
+      <DependentUpon>201605100103573_OnetoMany session and ticket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605101254459_Foreign Key EventId on Sessions.resx">
+      <DependentUpon>201605101254459_Foreign Key EventId on Sessions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605101811127_TicketPurchase field added TransactionId, TicketId.resx">
+      <DependentUpon>201605101811127_TicketPurchase field added TransactionId, TicketId.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605102059422_change.resx">
+      <DependentUpon>201605102059422_change.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

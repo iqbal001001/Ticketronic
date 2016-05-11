@@ -1,0 +1,96 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ticketronic.WebAPI", "Ticketronic.WebAPI\Ticketronic.WebAPI.csproj", "{A29C10D2-1C13-490D-A615-42B03E053456}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ticketronic.WebAPI.Tests.Unit", "Ticketronic.WebAPI.Tests.Unit\Ticketronic.WebAPI.Tests.Unit.csproj", "{9A074D47-5BE4-4ED1-B787-0A28AB6836F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ticketronic.DI", "Ticketronic.DI\Ticketronic.DI.csproj", "{F2E1249B-ABCB-494A-A9A1-52BA823ABEEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ticketronic.BusinessInterface", "Ticketronic.BusinessInterface\Ticketronic.BusinessInterface.csproj", "{E7717380-A53D-4A5A-A095-5F350C0F8A2A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ticketronic.RepositoryInterface", "Ticketronic.RepositoryInterface\Ticketronic.RepositoryInterface.csproj", "{62D14D17-3773-4C4A-BB73-D1E39978EB71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ticketronic.Domain", "Ticketronic.Domain\Ticketronic.Domain.csproj", "{F991CFB1-010E-46F0-A7EA-EA9633FF1365}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ticketronic.Data", "Ticketronic.Data\Ticketronic.Data.csproj", "{EB6B60AF-F391-4AB5-94E1-67E90EFBF5FF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 Client", "01 Client", "{9C39C161-8FF5-46BC-9110-36422EF597C1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 BusinessInterface", "02 BusinessInterface", "{C0C35251-0BA0-445D-A0FF-09AE3B389CF0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 RepositoryInterface", "03 RepositoryInterface", "{851205C4-7366-4560-A490-F35A7934A04E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 Domain", "04 Domain", "{7D4ED339-60F7-495C-A496-756CE57F0F18}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05 DependencyInjection", "05 DependencyInjection", "{32769E7B-90BB-46C4-A9CA-4B0D7FBA1467}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dependency", "Dependency", "{12473C26-F603-4B78-8D02-220C097843AB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{95F6A2BE-80B1-4A43-924A-958BE6D715E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ticketronic.WebAPI.Tests.Integration", "Ticketronic.WebAPI.Tests.Integration\Ticketronic.WebAPI.Tests.Integration.csproj", "{E7669F4F-B19E-42AF-9210-34799C9839F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ticketronic.Web", "Ticketronic.Web\Ticketronic.Web.csproj", "{9CEC0F11-A3E6-41B0-A30D-B942CCA79264}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A29C10D2-1C13-490D-A615-42B03E053456}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A29C10D2-1C13-490D-A615-42B03E053456}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A29C10D2-1C13-490D-A615-42B03E053456}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A29C10D2-1C13-490D-A615-42B03E053456}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A074D47-5BE4-4ED1-B787-0A28AB6836F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A074D47-5BE4-4ED1-B787-0A28AB6836F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A074D47-5BE4-4ED1-B787-0A28AB6836F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A074D47-5BE4-4ED1-B787-0A28AB6836F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2E1249B-ABCB-494A-A9A1-52BA823ABEEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2E1249B-ABCB-494A-A9A1-52BA823ABEEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2E1249B-ABCB-494A-A9A1-52BA823ABEEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2E1249B-ABCB-494A-A9A1-52BA823ABEEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7717380-A53D-4A5A-A095-5F350C0F8A2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7717380-A53D-4A5A-A095-5F350C0F8A2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7717380-A53D-4A5A-A095-5F350C0F8A2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7717380-A53D-4A5A-A095-5F350C0F8A2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62D14D17-3773-4C4A-BB73-D1E39978EB71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62D14D17-3773-4C4A-BB73-D1E39978EB71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62D14D17-3773-4C4A-BB73-D1E39978EB71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62D14D17-3773-4C4A-BB73-D1E39978EB71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F991CFB1-010E-46F0-A7EA-EA9633FF1365}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F991CFB1-010E-46F0-A7EA-EA9633FF1365}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F991CFB1-010E-46F0-A7EA-EA9633FF1365}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F991CFB1-010E-46F0-A7EA-EA9633FF1365}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB6B60AF-F391-4AB5-94E1-67E90EFBF5FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB6B60AF-F391-4AB5-94E1-67E90EFBF5FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB6B60AF-F391-4AB5-94E1-67E90EFBF5FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB6B60AF-F391-4AB5-94E1-67E90EFBF5FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7669F4F-B19E-42AF-9210-34799C9839F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7669F4F-B19E-42AF-9210-34799C9839F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7669F4F-B19E-42AF-9210-34799C9839F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7669F4F-B19E-42AF-9210-34799C9839F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CEC0F11-A3E6-41B0-A30D-B942CCA79264}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CEC0F11-A3E6-41B0-A30D-B942CCA79264}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CEC0F11-A3E6-41B0-A30D-B942CCA79264}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CEC0F11-A3E6-41B0-A30D-B942CCA79264}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A29C10D2-1C13-490D-A615-42B03E053456} = {9C39C161-8FF5-46BC-9110-36422EF597C1}
+		{9A074D47-5BE4-4ED1-B787-0A28AB6836F3} = {9C39C161-8FF5-46BC-9110-36422EF597C1}
+		{F2E1249B-ABCB-494A-A9A1-52BA823ABEEF} = {32769E7B-90BB-46C4-A9CA-4B0D7FBA1467}
+		{E7717380-A53D-4A5A-A095-5F350C0F8A2A} = {C0C35251-0BA0-445D-A0FF-09AE3B389CF0}
+		{62D14D17-3773-4C4A-BB73-D1E39978EB71} = {851205C4-7366-4560-A490-F35A7934A04E}
+		{F991CFB1-010E-46F0-A7EA-EA9633FF1365} = {7D4ED339-60F7-495C-A496-756CE57F0F18}
+		{EB6B60AF-F391-4AB5-94E1-67E90EFBF5FF} = {95F6A2BE-80B1-4A43-924A-958BE6D715E4}
+		{95F6A2BE-80B1-4A43-924A-958BE6D715E4} = {12473C26-F603-4B78-8D02-220C097843AB}
+		{E7669F4F-B19E-42AF-9210-34799C9839F9} = {9C39C161-8FF5-46BC-9110-36422EF597C1}
+		{9CEC0F11-A3E6-41B0-A30D-B942CCA79264} = {9C39C161-8FF5-46BC-9110-36422EF597C1}
+	EndGlobalSection
+EndGlobal
